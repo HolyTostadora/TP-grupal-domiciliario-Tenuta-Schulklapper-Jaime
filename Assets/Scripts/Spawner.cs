@@ -16,9 +16,9 @@ public class Spawner : MonoBehaviour
         cantidadDeObjCreados = Random.Range(1,10);
         indiceObjeto = Random.Range(0, objetos.Length);
         Debug.Log(cantidadDeObjCreados);
-        for (int i = 0; i <= cantidadDeObjCreados; i++)
+        for (int i = 0; i < cantidadDeObjCreados; i++)
         {
-            Debug.Log("ñ");
+            spawnObject();
         }
     }
 
