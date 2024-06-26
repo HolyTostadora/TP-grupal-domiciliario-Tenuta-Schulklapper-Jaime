@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3148603303207437588}
   - component: {fileID: 3148603303208437716}
   - component: {fileID: 6999049217020309302}
+  - component: {fileID: 114318970892945182}
   m_Layer: 0
   m_Name: "Mart\xEDn Dupuy_Ezequiel Eduardo_48038863"
   m_TagString: Untagged
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3148603303210703124}
-  m_LocalRotation: {x: 1, y: -0, z: 0, w: -0.00000019470718}
+  m_LocalRotation: {x: -1, y: -0.0000001872535, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.17614329, y: 0.102205165, z: 0.09672143}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: -0.000015258789}
 --- !u!33 &3148603303207437588
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -58,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d3379a60f6c4c4b428b48240a1e5015c, type: 3}
+  - {fileID: 2100000, guid: a9b136fb5a513b1488830be10f84d387, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,3 +95,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114318970892945182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3148603303210703124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e26a73d17f9f2c8479640513e869d826, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
