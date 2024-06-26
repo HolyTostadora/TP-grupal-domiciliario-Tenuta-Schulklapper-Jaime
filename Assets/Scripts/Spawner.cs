@@ -13,15 +13,22 @@ public class Spawner : MonoBehaviour
     private int cantidadDeObjCreados;
     private int contadorDeRepeticiones = 0;
     public Button spawnButton;
+    public GameObject Panel_Inicio;
+
+    void Start()
+    {
+        Panel_Inicio.SetActive(true);
+    }
 
     public void CLICK ()
     {
-        spawnButton.interactable = false;
+
+        Panel_Inicio.SetActive(false); 
         cantidadDeObjCreados = Random.Range(1,10);
         indiceObjeto = Random.Range(0, objetos.Length);
         contadorDeRepeticiones = 0;
         Debug.Log(cantidadDeObjCreados);
-        InvokeRepeating(nameof(spawnObject), 0, 1);
+        InvokeRepeating(nameof(spawnObject), 3, 1);
     }
 
     public void spawnObject()
@@ -29,7 +36,6 @@ public class Spawner : MonoBehaviour
         if (contadorDeRepeticiones >= cantidadDeObjCreados)
         {
             CancelInvoke("spawnObject");
-            spawnButton.interactable = true;
             return;
         }
         GameObject objectToSpawn = objetos[indiceObjeto];
