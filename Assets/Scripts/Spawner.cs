@@ -22,7 +22,7 @@ public class Spawner : MonoBehaviour
         Panel_Rta.SetActive(false);
         
          
-            }
+    }
 
     public void CLICK ()
     {
