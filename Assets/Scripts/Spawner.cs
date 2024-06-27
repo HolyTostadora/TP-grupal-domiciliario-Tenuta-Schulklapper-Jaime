@@ -10,7 +10,7 @@ public class Spawner : MonoBehaviour
     public Transform spawnPoint;
     public float intervaloSpawn;
     private int indiceObjeto;
-    private int cantidadDeObjCreados;
+    public int cantidadDeObjCreados;
     private int contadorDeRepeticiones = 0;
     public Button spawnButton;
     public GameObject Panel_Inicio;
