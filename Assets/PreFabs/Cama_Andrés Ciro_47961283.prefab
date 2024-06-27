@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5995188883675863732}
   - component: {fileID: 5995188883674863732}
   - component: {fileID: 391073579572309483}
-  - component: {fileID: 114926009478824892}
   m_Layer: 0
   m_Name: "Cama_Andr\xE9s Ciro_47961283"
   m_TagString: Untagged
@@ -95,15 +94,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114926009478824892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5995188883676792500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26a73d17f9f2c8479640513e869d826, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 563971992743022394}
   - component: {fileID: 563971992741924346}
   - component: {fileID: 3897332086562357216}
-  - component: {fileID: 114212918433351304}
   m_Layer: 0
   m_Name: Goldman_Eial Ionatan_48111216
   m_TagString: Untagged
@@ -95,15 +94,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114212918433351304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 563971992739664698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26a73d17f9f2c8479640513e869d826, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

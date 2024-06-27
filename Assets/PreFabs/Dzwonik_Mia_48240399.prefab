@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 515335180838318945}
   - component: {fileID: 6240100202810067769}
-  - component: {fileID: 114588815592401332}
   m_Layer: 0
   m_Name: Dzwonik_Mia_48240399
   m_TagString: Untagged
@@ -50,18 +49,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114588815592401332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515335180838678337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26a73d17f9f2c8479640513e869d826, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &515335180838678339
 GameObject:
   m_ObjectHideFlags: 0

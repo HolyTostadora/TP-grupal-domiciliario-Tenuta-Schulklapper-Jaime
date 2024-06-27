@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6700224572127173860}
   - component: {fileID: 6700224572126043684}
   - component: {fileID: 4034984956302296057}
-  - component: {fileID: 114998890347976000}
   m_Layer: 0
   m_Name: Meinrath_Victoria_48040422
   m_TagString: Untagged
@@ -95,15 +94,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114998890347976000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6700224572123775204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26a73d17f9f2c8479640513e869d826, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
