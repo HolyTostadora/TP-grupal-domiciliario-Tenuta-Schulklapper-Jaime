@@ -15,6 +15,7 @@ public class Spawner : MonoBehaviour
     public GameObject Panel_Inicio;
     public GameObject Panel_Rta;
     public List<GameObject> spawneados = new List<GameObject>();
+    public 
 
     void Start()
     {

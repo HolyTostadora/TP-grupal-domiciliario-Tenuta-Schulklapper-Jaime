@@ -42,6 +42,7 @@ public class respuestascript : MonoBehaviour
         }
         else
         {
+            panelalgoingresado.SetActive(false);
             texto.text = "";
             panelrespuesta.SetActive(true);
         }
@@ -74,6 +75,7 @@ public class respuestascript : MonoBehaviour
                 texto.text = "Incorrecto"; 
                 cerrartxt.text = "intentalo de nuevo";
                 panelalgoingresado.SetActive(true);
+                buttonsalirtxt.text = "Volver a intentarlo";
                 inputresp.text = "";
                 correcto_incorrecto = false;
 
