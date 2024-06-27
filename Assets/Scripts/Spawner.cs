@@ -20,7 +20,9 @@ public class Spawner : MonoBehaviour
     {
         Panel_Inicio.SetActive(true);
         Panel_Rta.SetActive(false);
-    }
+        
+         
+            }
 
     public void CLICK ()
     {
