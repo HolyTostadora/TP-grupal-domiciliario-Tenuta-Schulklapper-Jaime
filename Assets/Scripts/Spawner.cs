@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class Spawner : MonoBehaviour
 {
-   
-    public GameObject[] objetos; 
+    public GameObject[] objetos;
     public Transform spawnPoint;
     public float intervaloSpawn;
     private int indiceObjeto;
@@ -15,23 +14,22 @@ public class Spawner : MonoBehaviour
     public Button spawnButton;
     public GameObject Panel_Inicio;
     public GameObject Panel_Rta;
+    public List<GameObject> spawneados = new List<GameObject>();
 
     void Start()
     {
         Panel_Inicio.SetActive(true);
         Panel_Rta.SetActive(false);
-        
-         
     }
 
-    public void CLICK ()
+    public void CLICK()
     {
-
-        Panel_Inicio.SetActive(false); 
-        cantidadDeObjCreados = Random.Range(1,10);
+        Panel_Inicio.SetActive(false);
+        cantidadDeObjCreados = Random.Range(1, 10);
         indiceObjeto = Random.Range(0, objetos.Length);
         contadorDeRepeticiones = 0;
         Debug.Log(cantidadDeObjCreados);
+        spawneados.Clear();
         InvokeRepeating(nameof(spawnObject), 3, 1);
     }
 
@@ -43,8 +41,12 @@ public class Spawner : MonoBehaviour
             Panel_Rta.SetActive(true);
             return;
         }
+
         GameObject objectToSpawn = objetos[indiceObjeto];
-        Instantiate(objectToSpawn, spawnPoint.position, spawnPoint.rotation);
+        GameObject spawnedObject = Instantiate(objectToSpawn, spawnPoint.position, spawnPoint.rotation);
+
+        spawneados.Add(spawnedObject);
+
         contadorDeRepeticiones++;
     }
 }

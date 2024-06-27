@@ -19,30 +19,43 @@ public class respuestascript : MonoBehaviour
     public GameObject panelnadaingresado;
     public Text buttonsalirtxt;
     public GameObject panelrespuesta;
-    public GameObject destrucction;
+    public Text cerrartxt;
+    private bool correcto_incorrecto;
     
 
     public void cerrarpanelnada()
     {
         panelnadaingresado.SetActive(false);
+        panelrespuesta.SetActive(true);
+        texto.text = "";
     }
     public void cerrarpanelalgo()
     {
-        panelrespuesta.SetActive(false);
-        panelalgoingresado.SetActive(false);
-        Spawner.Panel_Inicio.SetActive(true);
-        SceneManager.LoadScene("UI");
-
+        if (correcto_incorrecto == true)
+        {
+            panelalgoingresado.SetActive(false);
+            Spawner.Panel_Inicio.SetActive(true);
+            foreach (GameObject clon in Spawner.spawneados)
+            {
+                Destroy(clon);
+            }
+        }
+        else
+        {
+            texto.text = "";
+            panelrespuesta.SetActive(true);
+        }
     }
     public void OnclickAsButton ()
     {
-        
+        panelrespuesta.SetActive(false);
         respuesta = Spawner.cantidadDeObjCreados;
         if (inputresp.text == "")
         {
 
             panelnadaingresadotxt.text = "Debes ingresar un resultado";
             panelnadaingresado.SetActive(true);
+           
 
         }
         else
@@ -53,18 +66,24 @@ public class respuestascript : MonoBehaviour
                 texto.text = "Correcto";
                 buttonsalirtxt.text = "Reiniciar el desafio";
                 panelalgoingresado.SetActive(true);
+                correcto_incorrecto = true;
             }
             else
             {
-
+                panelrespuesta.SetActive(false);
                 texto.text = "Incorrecto"; 
-                buttonsalirtxt.text = "intentalo de nuevo";
+                cerrartxt.text = "intentalo de nuevo";
                 panelalgoingresado.SetActive(true);
-                Debug.Log("Incorrecto");
                 inputresp.text = "";
+                correcto_incorrecto = false;
 
             }
         }
+    }
+
+    void salir_juego()
+    {
+        SceneManager.LoadScene("SeleccionarJuegos");
     }
     void Start()
     {
@@ -73,14 +92,4 @@ public class respuestascript : MonoBehaviour
         panelrespuesta.SetActive(false);
     }
 
-    //public void DestroyObjects()
-    //{
-        
-    //}
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
