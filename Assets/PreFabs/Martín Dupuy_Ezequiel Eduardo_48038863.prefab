@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3148603303207437588}
   - component: {fileID: 3148603303208437716}
   - component: {fileID: 6999049217020309302}
+  - component: {fileID: 64514122442093586}
   m_Layer: 0
   m_Name: "Mart\xEDn Dupuy_Ezequiel Eduardo_48038863"
   m_TagString: Untagged
@@ -94,3 +95,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &64514122442093586
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3148603303210703124}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: d3379a60f6c4c4b428b48240a1e5015c, type: 3}

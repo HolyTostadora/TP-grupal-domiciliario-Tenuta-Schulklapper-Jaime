@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5995188883675863732}
   - component: {fileID: 5995188883674863732}
   - component: {fileID: 391073579572309483}
+  - component: {fileID: 64408815026147820}
   m_Layer: 0
   m_Name: "Cama_Andr\xE9s Ciro_47961283"
   m_TagString: Untagged
@@ -94,3 +95,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &64408815026147820
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5995188883676792500}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 2e8a1f42ac7834c4b90f9e1db258b955, type: 3}
