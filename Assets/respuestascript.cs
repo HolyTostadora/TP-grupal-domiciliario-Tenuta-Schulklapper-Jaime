@@ -81,7 +81,7 @@ public class respuestascript : MonoBehaviour
         }
     }
 
-    void salir_juego()
+    public void salir_juego()
     {
         SceneManager.LoadScene("SeleccionarJuegos");
     }

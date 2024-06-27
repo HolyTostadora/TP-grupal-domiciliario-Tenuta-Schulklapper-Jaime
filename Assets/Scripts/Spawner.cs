@@ -30,7 +30,7 @@ public class Spawner : MonoBehaviour
         contadorDeRepeticiones = 0;
         Debug.Log(cantidadDeObjCreados);
         spawneados.Clear();
-        InvokeRepeating(nameof(spawnObject), 3, 1);
+        InvokeRepeating(nameof(spawnObject), 0, 1);
     }
 
     public void spawnObject()
